@@ -359,7 +359,7 @@ Install_WireGuardTools_Debian() {
     case ${SysInfo_OS_Ver_major} in
     10)
         if [[ -z $(grep "^deb.*buster-backports.*main" /etc/apt/sources.list{,.d/*}) ]]; then
-            echo "deb http://deb.debian.org/debian buster-backports main" | tee /etc/apt/sources.list.d/backports.list
+            echo "deb http://archive.debian.org/debian buster-backports main" | tee /etc/apt/sources.list.d/backports.list
         fi
         ;;
     *)
